@@ -56,7 +56,6 @@ function generateRandomHex() {
 }
 
 function copyHex() {
-  const gradient = `backgroundImage: linear-gradient()
-  (45deg, #${hex1}, #${hex2});`;
+  const gradient = `background: linear-gradient(45deg, #${hex1}, #${hex2})`;
   navigator.clipboard.writeText(gradient);
 }
